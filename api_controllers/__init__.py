@@ -19,5 +19,5 @@ class RefreshController(Resource):
             "username": username,
             "password": password
         }
-        response = post('http://unamed_api', json=request_data)
+        response = post('http://scaler_api', json=request_data)
         return response.json(), response.status_code
