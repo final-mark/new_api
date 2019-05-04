@@ -11,7 +11,7 @@ class RefreshController(Resource):
         password = data.get('password')
 
         if not username or not password:
-            return {"Username or password were not provided"}, 400
+            return {"message":"Username or password were not provided"}, 400
 
         request_data = {
             "plugin": "finalmark",
